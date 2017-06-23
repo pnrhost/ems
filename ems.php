@@ -18,8 +18,13 @@ define('EMS_PLUGIN_DIR',plugin_dir_path(__FILE__));
 add_action('admin_menu', 'my_menu_pages');
 function my_menu_pages(){
     add_menu_page('EMS', 'EMS', 'manage_options', 'my-menu', 'my_menu_output' );
-    add_submenu_page('my-menu', 'Submenu Page Title', 'Whatever You Want', 'manage_options', 'my-menu' );
-    add_submenu_page('my-menu', 'Submenu Page Title2', 'Whatever You Want2', 'manage_options', 'my-menu2' );
+    add_submenu_page('my-menu', 'Exam Boards', 'Whatever You Want', 'manage_options', 'my-menu' );
+    add_submenu_page('my-menu', 'Course Category', 'Whatever You Want2', 'manage_options', 'my-menu2' );
+    add_submenu_page('my-menu', 'Course Levels', 'Whatever You Want2', 'manage_options', 'my-menu2' );
+    add_submenu_page('my-menu', 'Course modules', 'Whatever You Want2', 'manage_options', 'my-menu2' );
+    add_submenu_page('my-menu', 'Students', 'Whatever You Want2', 'manage_options', 'my-menu2' );
+    add_submenu_page('my-menu', 'Teachers', 'Whatever You Want2', 'manage_options', 'my-menu2' );
+    add_submenu_page('my-menu', 'Settings', 'Whatever You Want2', 'manage_options', 'my-menu2' );
 }
 
 
